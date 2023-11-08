@@ -12,3 +12,7 @@ a{
 ul, ol, li{
     list-style: none;
 }
+input{
+    border: none;
+    background-color: rgb(255, 255, 255, .0);
+}
