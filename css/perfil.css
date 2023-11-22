@@ -8,6 +8,7 @@ header{
     padding: 48px 28px;
     color: var(--cor-texto);
     font-size: 14px;
+    z-index: ;
 }
 
 header .return{
@@ -45,4 +46,14 @@ header .profile .editIcon{
 }
 .editIcon:hover{
     transform: scale(.9);
+}
+.white{
+    background-color: var(--cor-texto);
+    width: 100vw;
+    height: 140px;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    border-radius: 36px;
+    z-index: -1;
 }

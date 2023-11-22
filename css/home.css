@@ -32,6 +32,7 @@ header .search{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 header .search input{
     width: 90%;
@@ -80,7 +81,21 @@ main .favoritePizza div{
     overflow-x: scroll;
     gap: 12px;
 }
+main .recommended div{
+    display: flex;
+    overflow-x: scroll;
+    gap: 12px;
+}
 main .favoritePizza .pizza{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 12px;
+}
+main .recommended .pizza{
     display: flex;
     flex-direction: column;
     width: 150px;
@@ -88,9 +103,6 @@ main .favoritePizza .pizza{
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     font-size: 12px;
 }
 .pizza1{
@@ -100,15 +112,29 @@ main .favoritePizza .pizza{
     background-image: url(../img/Home/pizza2.webp);
 }
 .Info{
+    display: flex;
+    flex-direction: column;
     width: 80%;
-    height: 40px;
     bottom: 0;
-    background-color: #0009;
-    transform: translateY(300%);
+    transform: translateY(75%);
     transition: 1s;
-    border-radius: 0px 10px 0px 10px;
+    padding: 0px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.value{
+    background-color: var(--cor-iconHome);
+    width: max-content;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin: 6px;
+}
+.content{
     padding: 4px 8px;
+    background-color: #0009;
+    border-radius: 0px 10px 0px 10px;
+    height: 40px;
 }
 .pizza:hover > .Info {
-    transform: translateY(69%);
+    transform: translateY(15%);
 }
