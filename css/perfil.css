@@ -8,7 +8,6 @@ header{
     padding: 48px 28px;
     color: var(--cor-texto);
     font-size: 14px;
-    z-index: ;
 }
 
 header .return{
@@ -34,6 +33,7 @@ header .profile .icon{
     padding: 12px;
     border-radius: 50%;
     box-shadow: 0.1em 0.01em #8f8f8f;
+    position: absolute;
 }
 header .profile .editIcon{
     position: absolute;
@@ -48,12 +48,11 @@ header .profile .editIcon{
     transform: scale(.9);
 }
 .white{
-    background-color: var(--cor-texto);
+    background-color: white;
     width: 100vw;
     height: 140px;
     position: absolute;
     left: 0;
     top: 200px;
-    border-radius: 36px;
-    z-index: -1;
+    border-radius: 32px 32px 0px 0px ;
 }
