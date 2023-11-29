@@ -14,7 +14,7 @@ header .return{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 170px;
+    width: 140px;
 }
 header .return img{
     cursor: pointer;
