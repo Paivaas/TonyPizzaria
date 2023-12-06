@@ -17,6 +17,11 @@ input{
     background-color: rgb(255, 255, 255, .0);
 }
 input:focus{
+<<<<<<< HEAD
     box-shadow:  0 0 0 0;
+=======
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+>>>>>>> 554f037b53170aa6e31349f7deb3cedbbc8b7528
     outline: 0;
 }

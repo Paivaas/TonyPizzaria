@@ -20,6 +20,7 @@ body::after{
 
 header{
     height: 150px;
+    
 }
 main{
     display: flex;
@@ -30,6 +31,7 @@ main{
     gap: 100px;
 }
 .conteudo-container{
+    background-color: rebeccapurple;
     color: var(--cor-texto);
     width: 257px;
 }
@@ -38,4 +40,12 @@ main{
 }
 .conteudo-container p{
     width: 310px;
+}
+
+@media(min-width:1024px){
+    body{
+        width: 20vw;
+        
+        margin: 168px;
+    }
 }
