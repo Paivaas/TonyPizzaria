@@ -138,3 +138,24 @@ main .recommended .pizza{
 .pizza:hover > .Info {
     transform: translateY(15%);
 }
+
+@media (min-width: 1200px) {
+    
+    body{
+        padding: 46px 67px;
+    }
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header .profile {
+        flex-direction: row-reverse;
+        gap: 12px;
+    }
+    header .search{
+        width: 352px;
+    }
+  
+
+
+}

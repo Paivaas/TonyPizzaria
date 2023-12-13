@@ -1,37 +1,27 @@
 body{
-    background-image: url(../img/Background.webp);
+    background-image: url(../img/Background.svg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     padding: 32px 24px;
-    height: 100vh;
+    height: 110vh;
+    overflow: hidden;
     font-family: 'Roboto', sans-serif;
-}
-
-body::after{
-    position: absolute;
-    content: "";
-    display: block;
-    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, var(--cor-principal)100%);
-    inset: 0;
-    z-index: -1;
 }
 
 header{
     height: 150px;
-    
 }
 main{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
-    flex-grow: 1;
+    height: 60vh;
     gap: 100px;
 }
 .conteudo-container{
-    background-color: rebeccapurple;
     color: var(--cor-texto);
     width: 257px;
 }
@@ -44,8 +34,19 @@ main{
 
 @media(min-width:1024px){
     body{
-        width: 20vw;
-        
-        margin: 168px;
+        padding: 60px 0px;
+        align-items: center;
+        gap: 24px;
     }
+    main{
+        height: 400px;
+        border: 2px dashed white;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .conteudo-container p{
+        width: 270px;
+    }
+   
+
 }

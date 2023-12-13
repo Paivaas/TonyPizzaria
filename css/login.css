@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/Background.webp);
+    background-image: url(../img/Background.svg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -9,14 +9,7 @@ body{
     font-family: 'Roboto', sans-serif;
     color: var(--cor-texto);
 }
-body::after{
-    position: absolute;
-    content: "";
-    display: block;
-    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, var(--cor-principal)100%);
-    inset: 0;
-    z-index: -1;
-}
+
 header{
     height: 150px;
 }
@@ -92,3 +85,27 @@ footer h2:hover{
     transform: scale(.92);
 }
 
+@media(min-width:1024px){
+    body{
+        padding: 40px 0px;
+        align-items: center;
+    }
+    main{
+        border: 2px dashed white;
+        border-radius: 12px;
+        flex-grow: 0;
+        height: 58vh;
+        gap: 30px;
+        padding: 8px 33px 8px 20px;
+    }
+    .conteudo-container p{
+        width: 270px;
+    }
+    .conteudo-conteiner h1{
+        width: 307px;
+    }
+    footer{
+        padding-top: 12px;
+    }
+
+}
