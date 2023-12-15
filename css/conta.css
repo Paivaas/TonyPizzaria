@@ -88,3 +88,29 @@ main h2{
     top: 280px;
     left: 0px;
 }
+
+@media(min-width:1024px){
+   main section{
+    width: 400px;
+   }
+   main{
+    align-items: center;
+   }
+   main a{
+    width: 270px;
+   }
+   main div{
+    padding-bottom: 0;
+   }
+   header{
+    height: 270px;
+   }
+   header .profile .addIcon{
+    left: 738px;
+    }
+    .white{
+        display: none;
+    }
+   
+
+}
